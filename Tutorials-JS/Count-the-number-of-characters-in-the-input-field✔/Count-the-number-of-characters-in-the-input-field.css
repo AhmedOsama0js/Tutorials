@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+
+.container {
+  margin: 10px auto;
+}
+
+input {
+  margin-top: 20px;
+  display: block;
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  background-color: #eee;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 4px solid rgb(177, 177, 177);
+  font-size: 20px;
+}
+input:focus {
+  outline: none;
+}
+.container .progress {
+  position: relative;
+  top: -5px;
+  display: block;
+  background-color: #2196f3;
+  width: 0;
+  height: 5px;
+  box-shadow: 0 0 16px 3px #2196f3;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.count {
+  display: block;
+  text-align: right;
+}
+.zero {
+  font-weight: bold;
+  color: rgb(241, 26, 73);
+}

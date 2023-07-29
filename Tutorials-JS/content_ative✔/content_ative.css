@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #3a2462;
+  font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.container .header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid white;
+  padding: 5px;
+  background-color: #eeeeee57;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.container .header li{
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius:20px ;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.container .header li.active{
+  background-color: #3a2462;
+}
+.container .box{
+  padding: 20px 40px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #eeeeee57;
+      width: 100%;
+
+}
+.container .box div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  display: none;
+  color: white;
+}
+.container .box div h4{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.container .box div p{
+  font-size: 70px;
+}
+.container .box div.active{
+  display: block;
+}

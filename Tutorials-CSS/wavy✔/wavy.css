@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to left, #0052D4, #4364F7);
+    
+}
+
+.wavy{
+    position: relative;
+    -webkit-box-reflect: below -12px
+    linear-gradient(transparent, rgb(0,0,0,0.2)),
+}
+
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 3.5em;
+    font-weight:400 ;
+    text-transform:uppercase ;
+    animation: wavye 1s ease-in-out infinite;
+    animation-delay: calc(0.1s* var(--i));
+    text-shadow: 0px 20px 12px rgb(255, 255, 255);
+}
+
+@keyframes wavye{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

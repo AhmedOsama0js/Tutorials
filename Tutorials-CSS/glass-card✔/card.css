@@ -1,0 +1,47 @@
+body{
+  background-color: #333;
+}
+.card{
+  margin: 100px auto;
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+.card-inner{
+  width: inherit;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background:radial-gradient(#6fb1fc, #4364F7, #0052D4) ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0052D4;
+  position: absolute;
+  animation: move-up 3s linear infinite alternate-reverse;
+}
+.box:nth-child(1){
+  top: -25px;
+  left: -25px;
+}
+.box:nth-child(2){
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down ;
+}
+@keyframes move-up{
+  to{
+    transform: translateY(-20px);
+    transform: rotate(360deg);
+  }
+}
+@keyframes move-down{
+  to{
+    transform: translateY(20px);
+    transform: rotate(360deg);
+  }
+}
