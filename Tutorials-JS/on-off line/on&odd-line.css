@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.container .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .box h1{
+  font-size: 60px;
+}
+
+.container .box span{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+.on{
+  transition: on 1s linear ease infinite;
+  }
+@keyframes on {
+  0%{
+    width: 0;
+    height: 0;
+  }
+  50%{
+    width: 40px;
+    height: 40px;
+  }
+  100%{
+    width: 0;
+    height: 0;
+  }
+}

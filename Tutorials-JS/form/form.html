@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <div class="container">
+    <header><h1>Sign Up</h1></header>
+    <div class="box-prop">
+      <div class="progress-name">
+        <span >Name</span>
+        <span>Barth</span>
+        <span>Contact</span>
+        <span>submit</span>
+      </div>
+      <div class="progress-par">
+        <span >1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+      </div>
+    </div>
+    <div class="form">
+      <form action="#">
+        
+        <div class="slide">
+          <h3>Basic Info</h3>
+          <div class="filed">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+          </div>
+          <div class="filed">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+          </div>
+          <div class="btnn">
+            <button class="next" type="button">next</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <h3>Contact Info</h3>
+          <div class="filed">
+            <label for="email">Your Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="filed">
+            <label for="number">Your Number</label>
+            <input type="tel" id="number">
+          </div>
+          <div class="btnn">
+            <button class="previous" type="button">previous</button>
+            <button class="next" type="button">next</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <h3>Barth Day Info</h3>
+          <div class="filed">
+            <label for="Date">Date</label>
+            <input type="date" id="Date">
+          </div>
+          <div class="filed">
+            <label for="number">Gender</label>
+            <select title="selector"  id="selector">
+              <option value="male">male</option>
+              <option value="male">female</option>
+            </select>
+          </div>
+          <div class="btnn">
+            <button  class="previous" type="button">previous</button>
+            <button class="next" type="button">next</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <h3>login Info</h3>
+          <div class="filed">
+            <label for="user">User Name</label>
+            <input type="text" id="user">
+          </div>
+          <div class="filed">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+          </div>
+          <div class="btnn">
+            <button class="previous"  type="button">previous</button>
+            <button class="submit" type="button">submit</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="popup">
+      <div class="box">
+        <h2>welcome</h2>
+        <button class="close" type="button">close</button>
+      </div>
+    </div>
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
