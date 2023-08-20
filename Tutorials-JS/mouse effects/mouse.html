@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="mouse.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mouse"></div>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nobis
+        hic dicta ea labore tempore facilis consequuntur placeat exercitationem
+        neque.
+      </p>
+    </div>
+    <script>
+      let mouse = document.querySelector(".mouse");
+      addEventListener("mousemove", (e) => {
+        mouse.style.cssText = `
+        top : ${e.y - 25}px;
+        left : ${e.x - 25}px;
+        `;
+      });
+    </script>
+  </body>
+</html>
