@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
- font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #dfdfdf;
-} 
-.container{
+}
+.container {
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -20,27 +20,26 @@ body{
   padding-bottom: 100px;
 }
 
-.dark-mode{
+.dark-mode {
   position: absolute;
   width: 200%;
-  height:200%;
+  height: 200%;
   background-color: #333;
-  top:0;
+  top: 0;
   left: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: -100;
   transition: clip-path 0.7s ease-in-out;
-  clip-path: circle(0% at 50% 50%) ;
+  clip-path: circle(0% at 50% 50%);
 }
 
-.dark-mode.active{
-  clip-path: circle(100% at 50% 50%) ;
-
+.dark-mode.active {
+  clip-path: circle(100% at 50% 50%);
 }
 
-.img-box{
+.img-box {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   place-items: center;
   padding: 50px;
@@ -49,10 +48,10 @@ body{
   width: 80%;
   border-radius: 10px;
   margin-top: 100px;
-  margin-bottom: 47px;
+  margin-bottom: 100px;
 }
 
-.img-box .box{
+.img-box .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,23 +63,23 @@ body{
   gap: 20px;
 }
 
-.img-box .box.active{
-background-color: #EEE;
+.img-box .box.active {
+  background-color: #eee;
 }
-.img-box .box h3{
-  color: #EEE;
+.img-box .box h3 {
+  color: #eee;
   transition: 0.7s;
 }
-.img-box .box h3.active{
-color: #333;
+.img-box .box h3.active {
+  color: #333;
 }
 /* The switch - the box around the slider */
 .switch {
-  position:absolute;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
-  top:20px;
+  top: 20px;
   left: 20px;
 }
 
@@ -100,8 +99,8 @@ color: #333;
   right: 0;
   bottom: 0;
   background-color: #333;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -112,12 +111,12 @@ color: #333;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 input:focus + .slider {
